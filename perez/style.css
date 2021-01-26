@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-style: oblique;
+    
+}
+
+.nav-bar{
+    position: fixed;
+    background-color: darkred;
+    width:100%;
+    padding: 5px 0;
+    top: 0;
+    z-index: 999;
+}
+
+.inner-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+
+}
+
+.nav-bar .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav-bar h1{
+    color:white;
+}
+
+.nav-menu a{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px;
+    cursor: none;
+    color: white;
+    transition: .3s linear;
+
+}
+
+.nav-menu a:hover{
+    color: black;
+}
+
+#home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(back.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#home h2{
+    padding: 40px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+}
+
+#home p{
+    color: white;
+}
+
+#home .inner-width{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    text-align: center;
+   font-size: 50px;
+   flex-wrap: wrap;
+   
+}
+#home .inner-width h2{
+    font-size: 25px;
+    font-style: oblique;
+    color: white;
+ 
+
+}
+
+#home h2::after{
+    content: "Welcome ";
+    animation: textanim 10s linear infinite;
+
+}
+
+@keyframes textanim{
+25%{
+    content: "To";
+}
+50%{
+    content: "Perez";
+}
+75%{
+    content: "Software";
+  }
+100%{
+    content: "company";
+}  
+}
+  #home .connect{
+      text-align: center;
+    border: 3px solid darkred;
+    font-size: 30px;
+    background-color: black;
+    color: blanchedalmond;
+    transition: .3s linear;
+
+} 
+.red{
+    color:darkred;
+    font-size: 40px;
+}
+
+#about{
+    height: 100vh;
+    min-height: 500px;
+    background-color: black;
+}
+#about h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 60px;
+    color: darkred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+#about p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:80px  100px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    color:darkred;
+}
+
+#service{
+    height: 100vh;
+    min-height: 500px;
+    background-color: black;
+    
+}
+
+#service h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 60px;
+    color: darkred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#service .inner-width{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 30px;
+    padding: 50px;
+}
+
+#service h2{
+    color: darkred;
+    font-size: 30px;
+}
+
+#service p{
+    color: darkred;
+    font-size: 25px;
+}
+
+#contacts{
+    height: 100vh;
+    min-height: 500px;
+    background-color: black;
+}
+
+#contacts .content{
+    text-align: center;
+    padding-top: 25%;
+    
+}
+#contacts p{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:darkred;
+}
+
+#contacts button{
+    font-size: 35px;
+    margin: 20px;
+    background-color:darkred;
+    color: blanchedalmond;
+}
